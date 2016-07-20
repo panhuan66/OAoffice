@@ -1,0 +1,155 @@
+
+{
+	margin:0px;
+	padding:0px;
+}
+html,body{
+	height:100%;
+}
+li{
+	list-style-type:none;
+}
+img{
+
+	border:0px;vertical-align:middle;
+}
+.top{
+	background-size:100%;
+	background-repeat: no-repeat; 
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration:none;
+	outline:none;
+	blr:expression(this.onFocus=this.blur());
+}
+/*.clear{
+	clear:both;
+}*/
+.ce{
+	display:block;
+	width:150px;
+	height:490px;
+	background-color:#82C2E5;
+	position:fixed;
+	z-index:5;
+	text-decoration:none;
+}
+.ce li{
+	border-bottom: 1px solid rgb(40,40,40);
+	border-top: 1px solid rgb(90,90,90);
+}
+.more{
+	margin-left: 36px;
+}
+.ce li a{
+	padding: 10px 10px 10px 10px;
+	color:white;
+	display:block;
+	cursor:pointer;
+}
+.ce li{
+	background:none;
+}
+
+.er{
+	display:none;
+	width:150px;
+	background-color:#82C2E5;
+}
+.er li{
+	width:100%;
+	border:solid rgb(140,140,140);
+	border-width:1px 0px 0px;
+}
+.er li a{
+	display:block;
+	padding:10px 10px 10px 20px;
+	color:white;background:none;
+	font-size: 12px;
+}
+
+.er li a:hover,.er li {
+	background:rgb(253,83,49);
+}
+
+
+
+/*.unnamed1 {
+	font-size: 12px;
+	line-height: 20px;
+	text-decoration: none;
+}a:visited {
+	font-size: 12px;
+	line-height: 20px;
+	color: #3366FF;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	line-height: 20px;
+	color: #CC0000;
+	text-decoration: underline;
+}
+a:link {
+	font-size: 12px;
+	line-height: 20px;
+	color: #0033CC;
+	text-decoration: none;
+}
+
+
+body {
+	 background-color:#ADADAD;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+td {
+	font-size: 17px;
+	font-family:Arial,'Times New Roman','Microsoft YaHei',SimHei; 
+	line-height: 25px;
+	text-decoration: none;
+}
+.title{
+	font-size: 12px;
+	color: FE6400;
+	font-weight: normal;
+
+}
+.time {
+	font-size: 12px;
+	color: #666666;
+}
+.button1 {
+	background-image: url(../image/btbg1.gif);
+	height: 25px;
+	width: 81px;
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 12px;
+
+
+}
+.button2 {
+	background-image: url(../image/btbg2.jpg);
+	height: 25px;
+	width: 113px;
+	border: none;
+	font-size: 12px;
+
+}
+.input1 {
+	font-size: 12px;
+	background-color: #E6EAF7;
+	height: 17px;
+	border: 1px solid #9FA5CA;
+	padding: 1px;
+	color: #000066;
+}
+*/
+

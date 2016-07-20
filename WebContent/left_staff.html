@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<title></title>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+ <link rel="stylesheet" href="code/css/bootstrap.min.css">
+<script language="JavaScript" type="text/JavaScript">
+
+function MM_goToURL() { 
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+</head>
+<script language="JavaScript">  
+  function MenuClick( MenuID )
+  {
+    var i = 0;
+    var idMenu = null;
+    for (i = 1; i <= 9; i++)
+    {
+      idMenu = "Menu" + i;
+      if (idMenu == MenuID)
+      {
+        eval(idMenu).style.display = "";
+      }
+      else
+      {
+        eval(idMenu).style.display = "none";
+      }
+    }
+  }
+</script>
+<body>
+ <ul class="ce">
+      <li> <a class="xz"  href="#">目录</a> </li>
+      <li> <a href="#">个人信息<img src="image/more.png"/> </a>
+         <ul class="er">
+            <li> <a  href="ownshow" target="mainFrame">本人信息</a></li>
+            <li class="e_li"><a  href="show" target="mainFrame">他人信息</a> 
+         </ul>
+      </li>
+
+      <li> <a href="#">工作安排<img src="image/more.png"/></a>
+         <ul class="er">
+            <li><a  href="ShowAdd" target="mainFrame">日程安排</a>    </li>
+            <li class="e_li"> <a  href="canlender1.html" target="mainFrame">日历查询</a> 
+         </ul>
+      </li>
+
+      <li> <a href="#">名片夹<img src="image/more.png"/></a>
+         <ul class="er">
+            <li><a  href="CardAction"target="mainFrame">名片夹分类</a></li>
+         </ul>
+      </li>
+
+      <li> 
+         <a href="#">个人文件夹<img src="image/more.png"/></a>
+         <ul class="er">
+            <li><a  href="webfolder/mydocument.html" target="mainFrame">个人文件夹</a></li>    
+         </ul>
+      </li>
+
+      <li> 
+         <a href="#">公司通讯录<img src="image/more.png"/></a>
+         <ul class="er">
+            <li><a  href="companyAction" target="mainFrame">公司通讯录</a></li>
+         </ul>
+      </li>      
+</ul>
+
+<script src="code/js/jquery-2.2.0.min.js"></script>
+<script src="code/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="fun" extends="struts-default">
+
+        <action name="loginAction" class="fun.loginAction">
+          
+                <result name="success1">staff.html</result>
+                <result name="success2">leader.html</result>
+                <result name="success3">admin.html</result>
+                <result name="error">error.html</result>
+             
+        </action>
+        
+         <action name="companyAction" class="fun.companyAction">
+              <result name="staff">addresslist/company_AddressList.jsp</result>
+          
+                
+        </action>
+        <action name="selectcompany" class="fun.selectcompany">
+              <result name="staff">addresslist/company_AddressList.jsp</result>     
+        </action>
+        
+        <action name="CardAction" class="fun.CardAction">
+              <result name="cards">card/Cardclassify.jsp</result>
+          
+                
+        </action>
+        <action name="CardDeleteAction"  class="fun.CardDeleteAction" method="delete">
+            <result type="redirectAction" >
+            <param name="actionName">CardAction</param>
+            </result>    
+        </action>
+        
+          <action name="CardkindUpdateAction"  class="fun.CardkindUpdateAction">
+           <result name="successupdate" type="redirectAction" >
+            <param name="actionName">CardAction</param>
+            </result>   
+              
+        </action>
+        <action name="addActivity" class="fun.addActivity">
+              <result name="successadd">workplan/ActivityShow.jsp</result>
+              <result name="error">ActivityAdd.jsp</result>
+        </action>
+        <action name="ShowAdd" class="fun.ShowAdd">
+              <result name="showadd">workplan/ActivityAdd.jsp</result>
+        </action>
+        
+         <action name="Showupdate" class="fun.Showupdate">
+              <result name="showupdate">card/UpdateCardClassfiy.jsp</result>
+        </action>
+        <action name="selectActivity" class="fun.selectActivity">
+              <result name="successselect">workplan/ActivitySelect.jsp</result>
+        </action>
+        <action name="updateActivity" class="fun.updateActivity">
+              <result name="successupdate">workplan/ActivityShow1.jsp</result>
+              <result name="error">ActivitySelect.jsp</result>
+        </action>
+        
+        <action name="loginAction" class="information.loginAction">
+          
+                <result name="success1">staff.html</result>
+                <result name="success2">leader.html</result>
+                <result name="success3">admin.html</result>
+                <result name="error">error.html</result>
+             
+        </action>
+  
+
+<action name="show" class="information.StaffShowAction" >
+
+<result name="staff">/information/OthersInfor.jsp</result>
+</action>
+<action name="show2" class="information.StaffSelectAction">
+<result name="staff2">/information/OthersInfor.jsp</result>
+</action>
+<action name="detail" class="information.StaffOneAction">
+<result name="onestaff">/information/OtherOneInfor.jsp</result>
+</action>
+<action name="ownshow" class="information.StaffOwnShowAction">
+<result name="ownstaff">/information/OwnInfor.jsp</result>
+</action>
+<action name="changeshow" class="information.StaffOwnShowAction">
+<result name="ownstaff">/information/OwnChange.jsp</result>
+</action>
+<action name="change" class="information.StaffOwnChangeAction">
+<result name="ownchange" type="redirectAction">
+<param name="actionName">ownshow</param>
+</result>
+</action>
+        
+        
+        
+        
+    </package>
+
+ 
+</struts>

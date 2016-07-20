@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页登录</title>
+ <link rel="stylesheet" type="text/css" href="code/css/bootstrap.min.css">
+ <script language="JavaScript" type="text/JavaScript">
+function _longin() { 
+	if(document.form1.username.value == ""){
+		alert("用户名不能为空");
+		return false;
+	}else if(document.form1.userpass.value == ""){
+		alert("密码不能为空");
+		return false;
+	}else{
+		if(document.form1.role[0].checked){
+		    document.form1.action="loginAction";
+		    
+			document.form1.submit();
+		
+			return true;
+		}else if(document.form1.role[1].checked){
+			
+			document.form1.action="loginAction";
+			document.form1.submit();
+			return true;
+		}else{
+		
+			document.form1.action="loginAction";
+			document.form1.submit();
+			return true;
+		}
+		
+	}
+	
+}
+
+</script>
+<style type="text/css">
+html,body {
+	height: 100%;
+}
+.box {
+	background-size:100%;
+	background-image:url("image/back.gif");
+	background-repeat: no-repeat; 
+	background-position:center;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.login-box {
+	width: 100%;
+	max-width:500px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	margin-top: -200px; /*设置负值，为要定位子盒子的一半高度*/
+	left: 50%;          
+    margin-left: -250px;/*设置负值，为要定位子盒子的一半宽度*/
+}
+.form {
+	width: 100%;
+	max-width:500px;
+	height: 275px;
+	margin: 25px auto 0px auto;
+	padding-top: 25px;
+}	
+.login-content {
+	height: 300px;
+	width: 100%;
+	max-width:500px;
+	background-color: rgba(255, 250, 2550, .6);
+	float: left;
+}		
+		
+.input-group {
+	margin: 0px 0px 30px 0px !important;
+}
+.form-control,
+.input-group {
+	height: 40px;
+}
+
+.form-group {
+	margin-bottom: 0px !important;
+}
+.login-title {
+	padding: 20px 10px;
+	background-color: rgba(0, 0, 0, .6);
+}
+.login-title h1 {
+	margin-top: 10px !important;
+}
+.login-title small {
+	color: #fff;
+}
+
+.link p {
+	line-height: 20px;
+	margin-top: 30px;
+}
+.btn-sm {
+	padding: 8px 24px !important;
+	font-size: 16px !important;
+}
+.radio{
+
+
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="login-box">
+			<div class="login-title text-center">
+				<h1><small>登录</small></h1>
+			</div>
+			<div class="login-content ">
+			<div class="form">
+
+			<form name="form1"  method="post">
+				<div class="form-group">
+					<div class="col-xs-12  ">
+	
+      <input  name="radiobutton" type="radio" id = "role" value="staff" checked>
+      职员  
+	  <input  name="radiobutton" type="radio" id = "role" value="leader"  >
+      领导
+      <input  name="radiobutton" type="radio" id = "role" value="admin">
+	  管理员
+	
+						<div class="input-group">
+				                   <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                  
+							<input type="text" id="username" name="username" class="form-control" placeholder="用户名">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input type="password" id="password" name="userpass" class="form-control" placeholder="密码">
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-actions">
+					<div class="col-xs-4 col-xs-offset-4 ">
+						<button type="submit" class="btn btn-sm btn-info" onClick="return _longin();"><span class="glyphicon glyphicon-off"></span> 登录</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-6 link">
+						<p class="text-center remove-margin"><small>忘记密码？</small> <a href="javascript:void(0)" ><small>找回</small></a>
+						</p>
+					</div>
+					<div class="col-xs-6 link">
+						<p class="text-center remove-margin"><small>还没注册?</small> <a href="javascript:void(0)" ><small>注册</small></a>
+						</p>
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
